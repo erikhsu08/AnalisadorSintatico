@@ -1,19 +1,20 @@
 import java.util.*;
 
 public class Analise {
-    private String exp;
-    private int i;
+	private String exp;
+	private int i;
 	
-    public Analise(String exp) {
-	this.exp = exp;
-	this.i = 0;
-    }
 	
-    public boolean parse() {
+	public Analise(String exp) {
+		this.exp = exp;
+		this.i = 0;
+	}
+	
+	public boolean parse() {
         i = 0;
         return I();
     }
-	
+
     private boolean I() {
         return S();
     }
