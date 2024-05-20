@@ -1,9 +1,21 @@
+/*
+Nome: Erik Samuel Viana Hsu						RA: 10403109
+
+Nome: Mateus Kenzo Iochimoto					RA: 10400995
+
+Nome: Rodrigo Machado de Assis Oliveira de Lima	RA: 10401873
+
+Nome: Thiago Shihan Cardoso Toma				RA: 10400764 
+
+Turma 05G
+
+*/
+
 import java.util.*;
 
 public class Analise {
 	private String exp;
 	private int i;
-	
 	
 	public Analise(String exp) {
 		this.exp = exp;
