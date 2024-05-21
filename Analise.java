@@ -24,7 +24,21 @@ public class Analise {
 	
 	public boolean parse() {
         i = 0;
-        return I();
+        int count = 0;
+        boolean result = I();
+        
+        while(i< exp.length() && exp.charAt(i) != ' ') {
+        	if(exp.charAt(i) == '(') {
+        		count++;
+        	} else if (exp.charAt(i) == ')') {
+        		count--;
+        		if(count < 0) {
+        			return false;
+        		}
+        	}
+        	i++;
+        }
+        return count == 0 && result;
     }
 
     private boolean I() {
@@ -103,4 +117,3 @@ public class Analise {
         }
     }
 }
-	
